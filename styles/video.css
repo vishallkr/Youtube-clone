@@ -21,7 +21,12 @@
 
 .video-preview{
     text-decoration: none;   /* removes underline */
-  color: inherit;          /* keeps original text color */
+    color: inherit;          /* keeps original text color */
+}
+
+.video-preview:hover {
+  background-color: #606060;
+  
 }
 
 .profile-picture{
@@ -49,6 +54,7 @@
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 16px;
     row-gap: 40px;
+    margin-left: 90px;
 }
 
 .video-time{

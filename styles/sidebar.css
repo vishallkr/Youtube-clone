@@ -11,9 +11,9 @@
 .sidebar-link{
    height: 66px;
    display: flex;
-   justify-content: center;
    align-items: center;
-   
+   justify-content: flex-start;
+   gap: 10px;
    cursor: pointer;
 }
 

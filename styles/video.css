@@ -1,7 +1,7 @@
 
 .thumbnails{
     width: 100%;
-    
+    border-radius: 12px;
 }
 
 .video-title{
@@ -20,13 +20,15 @@
 }
 
 .video-preview{
-    text-decoration: none;   /* removes underline */
-    color: inherit;          /* keeps original text color */
+    text-decoration: none;   
+    color: inherit;        
 }
 
 .video-preview:hover {
   background-color: #606060;
-  
+  transition: transform 0.3s;
+  border-radius: 12px;   /* curve the corners */
+  overflow: hidden;     
 }
 
 .profile-picture{
@@ -37,6 +39,7 @@
 .thumbnail-row{
     margin-bottom: 8px;
     position: relative;
+    
 }
 
 .video-author,
@@ -55,6 +58,7 @@
     column-gap: 16px;
     row-gap: 40px;
     margin-left: 90px;
+    
 }
 
 .video-time{

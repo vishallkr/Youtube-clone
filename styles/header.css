@@ -36,7 +36,7 @@
     border-width: 1px;
     border-style: solid;
     border-color: gray;
-    border-radius: 2px;
+    border-radius: 50px;
     box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
     width: 0;
 }
@@ -44,7 +44,7 @@
 .search-bar::placeholder{
     font-family: roboto,arial;
     font-size: 16px;
-
+    padding-left: 5px;
 }
 
 .search-button{
@@ -53,10 +53,12 @@
     border-width: 1;
     border-style: solid;
     border-color: rgb(192, 192, 192);
-    margin-left: -1px;
+    margin-left: -50px;
     margin-right: 10px;
     position: relative;
+    border-radius: 50px;
 }
+
 
 .search-button .tooltip{
     position: absolute;
@@ -72,11 +74,13 @@
     opacity: 0;
     transition: opacity 0.15s;
     pointer-events: none;
+    
 }
 
 .search-button:hover .tooltip{
     opacity: 1;
 }
+
 
 .search-icons{
     height: 25px;
@@ -107,6 +111,15 @@
     flex-shrink: 0;
 }
 
+.right-section p{
+  background-color: #eeeded;  
+  color: black;       
+  padding: 8px 14px;       
+  border-radius: 20px;  
+  font-size: 16px;
+  cursor: pointer;
+}
+
 .upload-icons{
     height: 24px;
 }
@@ -121,21 +134,6 @@
 
 .notifications-icons-container{
     position: relative;
-}
-
-.notification-count{
-    position: absolute;
-    top: -2px;
-    right: -5px;
-    background-color: red;
-    color: white;
-    font-family: roboto,arial;
-    font-size: 11px;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    border-radius: 10px;
 }
 
 .current-user-picture{
